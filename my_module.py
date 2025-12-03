@@ -54,12 +54,15 @@ print("while Loop")
 
 
 
+print(pow(2, 4))
 
 
 
 
-
-
+s = ""
+for ch in ["a", "b", "c"]:
+    s += ch
+print(s)
 
 
 
