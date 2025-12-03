@@ -78,9 +78,9 @@ def caesar(original_text, shift_amount, encode_or_decode):
         if letter not in alphabet:
             output_text += letter
         else:
-            shifted_pos = alphabet.index(letter) + shift_amount
-            shifted_pos = shifted_pos % len(alphabet)
-            output_text = output_text + alphabet[shifted_pos]
+            shifted_pos = alphabet.index(letter) + shift_amount  # important main concept
+            shifted_pos = shifted_pos % len(alphabet)  # always keeps your index in between 0 to 25
+            output_text = output_text + alphabet[shifted_pos]  # important main concept
 
     print(f"here id the {encode_or_decode} result: {output_text}")
 
@@ -96,8 +96,8 @@ while should_continue:
 
     caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
 
-    restart  = input("Type 'yes' if you want to go again. Otherwise type 'NO': \n ").lower()
+    restart = input("Type 'yes' if you want to go again. Otherwise type 'NO': \n ").lower()
 
-    if restart == 'No':
+    if restart == 'no':
         should_continue = False
         print("Good Bye")
