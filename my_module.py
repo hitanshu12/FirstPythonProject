@@ -65,4 +65,114 @@ for ch in ["a", "b", "c"]:
 print(s)
 
 
+# Dictionary
+
+programing_dictionary = {
+    "bug": "An Bug",
+    "Function": "An Function",
+    "Loop": "An Loop",
+}
+
+
+print(programing_dictionary["Loop"])
+
+# add key value in dictionary
+
+programing_dictionary["exception"] = "An exception"
+print(programing_dictionary)
+
+
+# empty dict
+
+empty_dict = {}
+print(empty_dict)
+
+# edit item key is bug
+
+programing_dictionary["bug"] = "An Moth"
+print(programing_dictionary)
+
+
+# using loop through dictionary
+
+
+for thing in programing_dictionary:
+    print(thing)     # through only dictionary keys
+
+for key in programing_dictionary:
+    print(key)
+    print(programing_dictionary[key])    # give the value of the dictionary keys
+
+
+for item in programing_dictionary.items():
+    print(item)
+    # print(programing_dictionary[key])    # give the value of the dictionary keys
+
+for value in programing_dictionary.values():
+    print(value)  # only values of dict31
+
+
+
+# Nested List in Dictionary
+
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "India": ["Delhi", "Mumbai", "Bangalore"],
+    "UK": ["London", "Manchester", "Wales"],
+    "Germany": ["Berlin", "Stuttgart"]
+}
+
+# access delhi
+print(travel_log["India"][0])
+
+# access Lille
+print(travel_log["France"][1])
+
+
+# print "D" from Nested List
+
+nested_list = ["A", "B", ["C", "D"]]
+print(nested_list[2][1])
+
+# Nested Dictionary
+
+travel_log1 = {
+    "France": {
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "num_times_visited": 2
+    },
+    "India": {
+        "cities_visited": ["Delhi", "Mumbai", "Bangalore"],
+        "num_times_visited": 8
+    }
+}
+
+print(travel_log1["India"]["cities_visited"][2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
