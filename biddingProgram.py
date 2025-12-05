@@ -1,7 +1,4 @@
 
-
-
-
 def find_highest_bidder(bidder_details):
     winner = ""
     highest_bid = 0
@@ -13,7 +10,8 @@ def find_highest_bidder(bidder_details):
 
     print(f"The winner is {winner} with a bid of ${highest_bid}")
 
-bidder_details ={}
+
+bidder_details = {}
 continue_bidding = True
 
 while continue_bidding:
@@ -27,4 +25,3 @@ while continue_bidding:
         find_highest_bidder(bidder_details)
     elif bidders == "yes":
         print("\n " * 100)
-
